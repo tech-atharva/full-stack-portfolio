@@ -1,0 +1,68 @@
+@import 'var';
+@import 'mixin';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@300&family=Poppins&family=Roboto&display=swap');
+*{
+    @include all;
+    &::after, &::before{
+        @include all;
+    }
+}
+body{
+    background-color: $light;
+}
+.navbar{
+    background-color: $light;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 2rem $dark;
+    justify-content: space-around;
+    .logo{
+        a{
+            text-decoration: none;
+            font-size: 1.8rem;
+            color: $dark;
+            h4{
+                text-decoration: none;
+                font-size: 1.8rem;
+                color: $dark;
+            }
+        }
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50vw;
+        height: 100%;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: $dark;
+                text-align: center;
+                position: relative;
+                &:hover{
+                    color: $primary;
+                    &::after , &::before{
+                        width: 100%;
+                    }
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 80%;left: 0%;
+                    height: 0.1rem;width: 0%;
+                    background-color: $primary;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 80%;right: 0%;
+                    height: 0.1rem;width: 0%;
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+JP:wght@300&family=Poppins&family=Roboto&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+*::after, *::before {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.navbar {
+  background-color: #f3f3f3;
+  height: 9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 2rem #161616;
+          box-shadow: 0px 0px 2rem #161616;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #161616;
+}
+
+.navbar .logo a h4 {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #161616;
+}
+
+.navbar .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50vw;
+  height: 100%;
+}
+
+.navbar .nav li {
+  list-style: none;
+}
+
+.navbar .nav li a {
+  text-decoration: none;
+  color: #161616;
+  text-align: center;
+  position: relative;
+}
+
+.navbar .nav li a:hover {
+  color: #00aeff;
+}
+
+.navbar .nav li a:hover::after, .navbar .nav li a:hover::before {
+  width: 100%;
+}
+
+.navbar .nav li a::after {
+  content: '';
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  height: 0.1rem;
+  width: 0%;
+  background-color: #00aeff;
+}
+
+.navbar .nav li a::before {
+  content: '';
+  position: absolute;
+  top: 80%;
+  right: 0%;
+  height: 0.1rem;
+  width: 0%;
+  background-color: #00aeff;
+}
+/*# sourceMappingURL=style.css.map */
